@@ -51,7 +51,7 @@ jobs:
         with: 
           images: gustavoconsales/kube-news:${{github.run_number}}
           manifests: |
-            k8s/deployments.yaml
+            k8s/deployment.yaml
             
           
           
