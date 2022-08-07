@@ -32,7 +32,8 @@ jobs:
             gustavoconsales/kube-news:latest
             gustavoconsales/kube-news:${{github.run_number}}
             
-  CD:        
+  CD:      
+    needs: [CI]
     runs-on: ubuntu-latest
     steps:     
       - uses: actions/checkout@v3
